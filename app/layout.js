@@ -1,10 +1,10 @@
-import { Poppins } from "next/font/google";
+import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
-const poppins = Poppins({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={cormorant.className}>
         <Navbar />
         {children}
       </body>
