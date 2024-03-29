@@ -7,3 +7,20 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+
+.hero {
+  background-image: url("../public/assets/hero4.jpg");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: bottom;
+  height: 650px;
+}
+
+.footer-head {
+  @apply text-lg border-b-2 mr-24  border-primaryHov mb-4;
+  @apply md:mt-2 mt-10;
+}
+
+.footer-li {
+  @apply my-1;
+}

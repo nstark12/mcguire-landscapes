@@ -19,6 +19,10 @@ const links = [
     title: "About",
     href: "#",
   },
+  {
+    title: "Contact",
+    href: "#",
+  },
 ];
 
 const NavLinks = () => {
