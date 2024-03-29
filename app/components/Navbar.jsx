@@ -16,12 +16,12 @@ const Navbar = () => {
           {!navbarOpen ? (
             <button onClick={() => setNavbarOpen(true)}>
               <div className="bg-primary py-4">
-                <Bars3Icon className="h-10 w-10 text-white bg-primary border border-primary rounded-lg m-6 md:hidden absolute right-0 top-1" />
+                <Bars3Icon className="h-10 w-10 text-white bg-primaryHov border border-primaryHov rounded-lg m-6 md:hidden absolute right-0 top-1" />
               </div>
             </button>
           ) : (
             <button onClick={() => setNavbarOpen(false)}>
-              <XMarkIcon className="h-10 w-10 text-white bg-primary border border-primary rounded-lg m-6 md:hidden absolute right-0 top-1" />
+              <XMarkIcon className="h-10 w-10 text-white bg-primaryHov border border-primaryHov rounded-lg m-6 md:hidden absolute right-0 top-1" />
             </button>
           )}
         </div>
@@ -39,7 +39,7 @@ const Navbar = () => {
           <NavOverlay />
         </div>
       )}
-      <nav className="bg-primary text-white md:block hidden relative">
+      <nav className="bg-primary text-white md:flex md:justify-center hidden relative">
         <ul className="flex justify-center">
           <NavLinks />
         </ul>

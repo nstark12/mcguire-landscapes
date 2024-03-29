@@ -29,7 +29,7 @@ const NavLinks = () => {
           <Link
             key={link.title}
             href={link.href}
-            className="px-12 py-2 hover:bg-primaryHov hover:rounded-lg text-xl"
+            className="px-12 py-2 hover:bg-primaryHov hover:rounded-lg text-xl md:inline flex justify-center items-center"
           >
             {link.title}
           </Link>
